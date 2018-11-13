@@ -1,0 +1,7 @@
+<template name="homeItem">
+  <view class='container'>
+    <image class='goods_icon' src='{{goods_icon}}'></image>
+    <view class='goods_title'>{{goods_title}}</view>
+    <view class='goods_price'>{{goods_price}}</view>
+  </view>
+</template>

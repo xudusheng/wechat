@@ -1,0 +1,24 @@
+.container{
+  width: 100%;
+  height: 750rpx;
+  text-align: left
+}
+/*
+.goods_icon{
+  width: 100%;
+  height: 120rpx;
+}
+
+.goods_title{
+  width: 100%;
+  height:30rpx;
+  text-align: left;
+
+}
+
+.goods_price{
+  width: 100%;
+  height:30rpx;
+  text-align: left;
+  text-decoration-color: "#000000"
+} */

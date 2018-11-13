@@ -1,0 +1,24 @@
+<view>
+
+  <!-- for循环，条件渲染 -->
+  <!-- <block wx:for="{{goodsList}}" wx:for-item="goods" wx:key="index">
+  
+    <view wx:if="{{goods.status===1}}">
+      {{goods.goods_title}}
+    </view>
+    <view wx:elif="{{goods.status===2}}">
+      {{goods.goods_title}}
+    </view>
+    <view wx:else>
+      {{goods.goods_id}}
+    </view>
+  </block> -->
+
+
+  <!-- import、template模板渲染 -->
+  <import src="homeItem.wxml" />
+  <block wx:for="{{goodsList}}" wx:for-item="goods" wx:key="index">
+    <template is="homeItem" data="{{...goods}}" />
+  </block>
+
+</view>
