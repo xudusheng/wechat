@@ -1,8 +1,4 @@
-.container{
-  width: 100%;
-  height: 750rpx;
-  text-align: left
-}
+
 /*
 .goods_icon{
   width: 100%;
@@ -22,3 +18,57 @@
   text-align: left;
   text-decoration-color: "#000000"
 } */
+
+.view-parent-container {
+  width: 300rpx;
+  height: 300rpx;
+  background: yellowgreen;
+}
+
+.hover-parent-container {
+  background: red;
+}
+
+.view-container {
+    width: 200rpx;
+  height: 200rpx;
+  background: burlywood;
+}
+
+.hover-container {
+  background: black;
+}
+
+#red {
+  width: 100%;
+  height: 750rpx;
+  background: red;
+}
+
+
+#green {
+  width: 100%;
+  height: 750rpx;
+  background: green;
+}
+
+
+#blue {
+  width: 100%;
+  height: 750rpx;
+  background: blue;
+}
+
+
+#yellow {
+  width: 100%;
+  height: 750rpx;
+  background: yellow;
+}
+
+
+#orange {
+  width: 100%;
+  height: 750rpx;
+  background: orange;
+}
