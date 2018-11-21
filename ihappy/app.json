@@ -1,6 +1,10 @@
 {
   "pages":[
     "pages/home/home/home",
+    "pages/community/community_main",
+    "pages/earning/earning_main",
+    "pages/shoppingcart/shoppingcart_main",
+    "pages/my/my_main",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -9,5 +13,34 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "碧选",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home/home",
+      "text": "首页",
+      "iconPath": "image/tabbar_home_home.png",
+      "selectedIconPath": "image/tabbar_home_home_highhighted.png"
+    },{
+      "pagePath": "pages/community/community_main",
+      "text": "社区",
+      "iconPath": "image/tabbar_home_found.png",
+      "selectedIconPath": "image/tabbar_home_found_highhighted.png"
+    },{
+      "pagePath": "pages/earning/earning_main",
+      "text": "升级赚钱",
+      "iconPath": "image/tabbar_home_fire.png",
+      "selectedIconPath": "image/tabbar_home_fire_highhighted.png"
+    },{
+      "pagePath": "pages/shoppingcart/shoppingcart_main",
+      "text": "购物车",
+      "iconPath": "image/tabbar_home_shoppingcart.png",
+      "selectedIconPath": "image/tabbar_home_shoppingcart_highhighted.png"
+    },
+    {
+      "pagePath": "pages/my/my_main",
+      "text": "我的",
+      "iconPath": "image/tabbar_home_my.png",
+      "selectedIconPath": "image/tabbar_home_my_highhighted.png"
+    }]
   }
 }
