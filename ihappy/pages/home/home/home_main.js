@@ -1,18 +1,20 @@
-// pages/my/my.main.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    title: "首页",
+    homeData: null,
+    searchDate: null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    this.fetchHomeData();
   },
 
   /**
@@ -62,5 +64,24 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+
+
+  fetchHomeData: function() {
+    var url = "http://134.175.54.80/ihappy/video/query.php?type=1&page_no=1&page_size=10";
+    var params = {
+      "type": 1,
+      "page_size": 10,
+      "page_no": 1,
+    };
+
+    var network = getApp().globalData.network;
+    network.requestLoading(url, {}, "正在加载数据", function(responseObj) {
+      console.log("请求成功\n" + JSON.stringify(responseObj));
+    }, function(statusCode) {
+      wx.showToast({
+        title: '数据加载失败',
+      })
+    });
   }
 })

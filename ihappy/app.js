@@ -1,11 +1,10 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function() {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
     // 登录
     wx.login({
       success: res => {
@@ -34,7 +33,13 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+
+    api_key: "uJSE0jR6zRJPi7OE",
+    api_version: "v1",
+    app_version: "3.1.6",
+    source: "wechat",
+    userInfo: null,
+    network: require("utils/network.js"),
   },
 
 

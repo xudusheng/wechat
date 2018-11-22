@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/home/home/home",
+    "pages/home/home/home_main",
     "pages/community/community_main",
     "pages/earning/earning_main",
     "pages/shoppingcart/shoppingcart_main",
@@ -16,7 +16,7 @@
   },
   "tabBar": {
     "list": [{
-      "pagePath": "pages/home/home/home",
+      "pagePath": "pages/home/home/home_main",
       "text": "首页",
       "iconPath": "image/tabbar_home_home.png",
       "selectedIconPath": "image/tabbar_home_home_highhighted.png"
