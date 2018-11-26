@@ -6,7 +6,8 @@
     "pages/shoppingcart/shoppingcart_main",
     "pages/my/my_main",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/demo/demo_page"
   ],
   "window":{
     "backgroundTextStyle":"light",

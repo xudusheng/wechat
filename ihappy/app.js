@@ -37,9 +37,11 @@ App({
     api_key: "uJSE0jR6zRJPi7OE",
     api_version: "v1",
     app_version: "3.1.6",
-    source: "wechat",
+    source: "ios",
     userInfo: null,
     network: require("utils/network.js"),
+
+    isDebug:true,
   },
 
 

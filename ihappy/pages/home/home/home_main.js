@@ -6,7 +6,7 @@ Page({
    */
   data: {
     title: "首页",
-    homeData: null,
+    homeData: {},
     searchDate: null,
   },
 
@@ -68,16 +68,16 @@ Page({
 
 
   fetchHomeData: function() {
-    var url = "http://134.175.54.80/ihappy/video/query.php?type=1&page_no=1&page_size=10";
-    var params = {
-      "type": 1,
-      "page_size": 10,
-      "page_no": 1,
-    };
-
+    var url = "/home";
+    var params = {};
     var network = getApp().globalData.network;
     network.requestLoading(url, {}, "正在加载数据", function(responseObj) {
-      console.log("请求成功\n" + JSON.stringify(responseObj));
+      console.log("请求成功\n" + JSON.stringify(responseObj.data));
+      console.log("==============");
+      this.setData({
+        homeData : responseObj.data
+      });
+      console.log("==============");
     }, function(statusCode) {
       wx.showToast({
         title: '数据加载失败',

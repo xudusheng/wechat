@@ -12,17 +12,23 @@ function request(url, params, success, fail) {
 // success:成功的回调函数
 // fail：失败的回调
 function requestLoading(url, params, loadingMessage, success, fail) {
+
+// if(getApp().globalData.)
+
   console.log(params);
   var paramsNew = signPackageWithParam(params);
   wx.showLoading({
     title: loadingMessage,
   })
 
+  let rootUrl = getApp().globalData.isDebug ? "http://172.16.6.71:8080/api" :"https://bx.bisinuolan.cn/api";
+  var token = "Bearer " + "";
   wx.request({
-    url: url,
+    url: rootUrl + url,
     data: paramsNew,
     header: {
-      'content-type': 'application/x-www-form-urlencoded'
+      "content-type": "application/json,text/html,text/json,text/plain,text/javascript,text/xml,image/*,application/x-www-form-urlencoded",
+      "Authorization": token
     },
     method: 'get',
     dataType: 'json',
@@ -55,7 +61,7 @@ var signPackageWithParam = function(param) {
   let api_version = app.globalData.api_version;
   let app_version = app.globalData.app_version;
   let source = app.globalData.source;
-  let timestamp = Date.parse(new Date()).toString;
+  let timestamp = Date.parse(new Date())/1000;
 
   //设备基本信息
   var phone_model = "";
@@ -102,16 +108,15 @@ for(let key in params) {
   for (var i = 0; i < keys.length; i++) {
     let key = keys[i];
     let value = params[key];
-    if (value.length > 0) {
-      signStr += (key + "=" + value);
-    }
+    signStr += (key + "=" + value);
     if (i < keys.length - 1) {
       signStr += "&";
     }
   }
-  signStr += "&91GAUJRfZzkXdWtq";
-
-  return hex_md5(signStr).toUpperCase;
+  signStr += "&key=91GAUJRfZzkXdWtq";
+  let sign_md5 = hex_md5(signStr);
+  let sign_md5_upcase = sign_md5.toUpperCase();
+  return sign_md5_upcase;
 }
 
 

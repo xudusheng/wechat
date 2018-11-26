@@ -1,74 +1,29 @@
-
-/*
-.goods_icon{
-  width: 100%;
-  height: 120rpx;
+/*top tab*/
+@import "../../../template/empty_page_template.wxss";
+.top-tab{
+  height:36px;
+  width: 750rpx;
+  border-top: 1rpx solid #dddcdc;
+  color: #7b7b7b;
+  font-size: 15px;
+  background-color: #f7f7f7;
+  z-index: 9999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  position: fixed;
+  top: 0;
 }
-
-.goods_title{
-  width: 100%;
-  height:30rpx;
-  text-align: left;
-
+.top-tab .top-tab-item{
+  /*display: inline-block;*/
+  /*width: 16%;*/
+  flex-grow: 1;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
 }
-
-.goods_price{
-  width: 100%;
-  height:30rpx;
-  text-align: left;
-  text-decoration-color: "#000000"
-} */
-
-.view-parent-container {
-  width: 300rpx;
-  height: 300rpx;
-  background: yellowgreen;
-}
-
-.hover-parent-container {
-  background: red;
-}
-
-.view-container {
-    width: 200rpx;
-  height: 200rpx;
-  background: burlywood;
-}
-
-.hover-container {
-  background: black;
-}
-
-#red {
-  width: 100%;
-  height: 750rpx;
-  background: red;
-}
-
-
-#green {
-  width: 100%;
-  height: 750rpx;
-  background: green;
-}
-
-
-#blue {
-  width: 100%;
-  height: 750rpx;
-  background: blue;
-}
-
-
-#yellow {
-  width: 100%;
-  height: 750rpx;
-  background: yellow;
-}
-
-
-#orange {
-  width: 100%;
-  height: 750rpx;
-  background: orange;
+.top-tab-item.active {
+  border-bottom:2px solid red;
+  color: red;
 }

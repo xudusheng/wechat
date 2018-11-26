@@ -31,7 +31,6 @@ function tabbarinit() {
         "text": "购物"
       }
     ]
-
 }
 
 /**

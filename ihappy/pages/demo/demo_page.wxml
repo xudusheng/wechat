@@ -1,0 +1,5 @@
+
+<import src="template_tabbar.wxml"/>
+<view class="info">
+  <template is="bottommenu"></template>
+</view>

@@ -1,0 +1,31 @@
+<template name="bottommenu">
+
+  <view class="bottomposition">
+    <navigator class="item_info" url="../home/home/home_main">
+      <image src="../../image/tabbar_home_home.png"></image>
+      <text>首页</text>
+    </navigator>
+
+    <navigator class="item_info" url="../community/community_main">
+      <image src="../../image/tabbar_home_found.png"></image>
+      <text>社区</text>
+    </navigator>
+
+    <navigator class="item_info" url="../earning/earning_main">
+      <image src="../../image/tabbar_home_fire.png"></image>
+      <text>升级赚钱</text>
+    </navigator>
+
+    <navigator class="item_info" url="../shoppingcart/shoppingcart_main">
+      <image src="../../image/tabbar_home_fire.png"></image>
+      <text>购物车</text>
+    </navigator>
+
+    <navigator class="item_info" url="../my/my_main">
+      <image src="../../image/tabbar_home_my.png"></image>
+      <text>我</text>
+    </navigator>
+
+    
+  </view>
+</template>

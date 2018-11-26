@@ -15,23 +15,24 @@
   </block> -->
 
 
-  <!-- import、template模板渲染
-  <import src="homeItem.wxml" />
-  <block wx:for="{{goodsList}}" wx:for-item="goods" wx:key="index">
-    <template is="homeItem" data="{{...goods}}" />
-  </block> -->
+  <!-- <view class="top-tab">
+  <view class="top-tab-item {{currentTopItem==idx ? 'active' : ''}}" wx:for="{{topTabItems}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="switchTab">
+    {{item}}
+  </view>
+</view> -->
 
-
-
-  <!-- <view class='section'>
-    <view>view组件</view>
-    <view class='view-parent-container' hover-class='hover-parent-container'>
-      <view class='view-container' hover-class='hover-container' hover-stop-propagation='true' hover-start-time='1' hover-stay-time='1'>
-
-      </view>
-    </view>
+  <!-- <import src="../../template/empty_page_template.wxml" /> -->
+  <!-- <view wx:if="{{data==undefine}}">
+    <template is="empty_page" />
+    
   </view> -->
 
+  <view class="top-tab">
+    <view class="top-tab-item {{homeData.category_list==idx ? 'active' : ''}}" wx:for="{{topTabItems}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="switchTab">
+
+      {{item.name}}
+    </view>
+  </view>
 
 
 </view>

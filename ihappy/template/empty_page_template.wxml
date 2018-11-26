@@ -1,0 +1,5 @@
+<template name="empty_page">
+
+<view>空白页</view>
+
+</template>
